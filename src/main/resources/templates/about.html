@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content = "text/html;" charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+</head>
+<body>
+<header th:insert="blocks/header :: header" ></header>
+<div class="container mt-5">
+    <h1 th:text="${title}"/>
+    <h1 >JUST BLOG</h1>
+    <p>PAL4D1N он же Rebel-cat</p>
+    <p>(Воинственно настроенный кот мятежник)</p>
+</div>
+<footer th:insert="blocks/footer :: footer"></footer>
+</body>
+</html>
