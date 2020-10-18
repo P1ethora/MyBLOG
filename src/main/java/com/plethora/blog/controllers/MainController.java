@@ -10,7 +10,6 @@ public class MainController {
 
     @GetMapping("/")
     public String home (@RequestParam(name = "title",required = false, defaultValue = "Omega")String name, Model model){
-
         model.addAttribute("title","MAIN PAGE");
         return "home";
     }
